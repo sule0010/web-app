@@ -23,13 +23,13 @@ This app will help me understand both the design and technical aspect of program
 
 ## Similar applications
 
-- [Simple Canvas Game](http://www.lostdecadegames.com/how-to-make-a-simple-html5-canvas-game/)
+- [Crax Mission](http://www.html5games.net/misc/crax-mission/)
 
-	This game was created by Matt Hackett and he shows how basic the coding can be. A hero and a vilan where the hero touches the vilan it disappears and the game resets. 
+	This is a game develpoed by HTML Codes Dudes in which you play as a theif who tries to get the most amount of loot and return back to the hideout. It also use the maze structure to make the game more challenging.  
 	 
 	**Differences**
 	
-	My game will have the enemies be more active making it more challenging for players.
+	My game will use the concept of the maze structure but instead, try to solve the maze and reach the goal as fast as you can.
 
 
 ## User research
