@@ -23,13 +23,20 @@ This app will help me understand both the design and technical aspect of program
 
 ## Similar applications
 
-- [Crax Mission](http://www.html5games.net/misc/crax-mission/)
+- [B-Maze](http://www.mochimedia.com/games/play/b-maze)
 
-	This is a game develpoed by HTML Codes Dudes in which you play as a theif who tries to get the most amount of loot and return back to the hideout. It also use the maze structure to make the game more challenging.  
+	This is a game created by K J Scott in which you control a red box and try to solve the maze. The game scores you based on the number of movements done to complete the maze.
 	 
 	**Differences**
 	
-	My game will use the concept of the maze structure but instead, try to solve the maze and reach the goal as fast as you can.
+	My game will use the concept of the maze structure but instead, try to solve the maze and reach the goal as fast as you can. It will keep a record of how long it took the player to comeplete the game.
 
+- [Super Maze Time Attack 2](http://www.mochimedia.com/games/play/super-maze-time-attack-2)
+
+	This is a game develpoed by lordmarte. I like the concept of these giant black objects that move randomly on the stage and if it touches the player it resets the game.
+	 
+	**Differences**
+	
+	I feel it may be a bit challenging for casual players and may get frustrated in playing the game hence will avoid that.
 
 ## User research
