@@ -40,3 +40,4 @@ This app will help me understand both the design and technical aspect of program
 	I feel it may be a bit challenging for casual players and may get frustrated in playing the game hence will avoid that.
 
 ## User research
+My Maze game is trageted towards casual gamers who want to mentally challenge themselves and also have fun.
