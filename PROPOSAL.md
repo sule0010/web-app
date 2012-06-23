@@ -1,11 +1,12 @@
 # Simple Game
 
-A very simple HTML5 game in which u can move the character in any direction and once he touches an enemy the game resets.
+A simple maze HTML5 game where the player figures his/her way to reach the goal. The player will be timed keeping records of who finsihes the the maze the fastest. 
 
 
 ### Features
 
 - Easy responsive controls. 
+- 
 
 ## Learning goals
 
@@ -18,6 +19,7 @@ This app will help me understand both the design and technical aspect of program
 
 - HTML5
 - Javascript
+- construct 2
 
 ## Similar applications
 
