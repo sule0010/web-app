@@ -25,7 +25,7 @@
 	
 
 ## 6.What parts of the application, in the past week, were frustrating?
-Getting the chracter do a certain animation when he is not moving.
+- Getting the chracter do a certain animation when he is not moving.
 
 ### 7.Did you have to radically alter something you’d finished previously?
 - No.
