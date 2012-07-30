@@ -9324,6 +9324,79 @@ cr.plugins_.TextBox = function(runtime)
 }());
 ;
 ;
+cr.plugins_.ajaxPost = function(runtime)
+{
+	this.runtime = runtime;
+};
+(function ()
+{
+	var pluginProto = cr.plugins_.ajaxPost.prototype;
+	pluginProto.Type = function(plugin)
+	{
+		this.plugin = plugin;
+		this.runtime = plugin.runtime;
+	};
+	var typeProto = pluginProto.Type.prototype;
+	typeProto.onCreate = function()
+	{
+	};
+	pluginProto.Instance = function(type)
+	{
+		this.type = type;
+		this.runtime = type.runtime;
+		this.lastData = "";
+		this.curTag = "";
+		this.dataToSend= ""; // Joe7
+	};
+	var instanceProto = pluginProto.Instance.prototype;
+	instanceProto.onCreate = function()
+	{
+	};
+	pluginProto.cnds = {};
+	var cnds = pluginProto.cnds;
+	cnds.OnComplete = function (tag)
+	{
+		return tag.toLowerCase() === this.curTag.toLowerCase();
+	};
+	cnds.OnError = function (tag)
+	{
+		return tag.toLowerCase() === this.curTag.toLowerCase();
+	};
+	pluginProto.acts = {};
+	var acts = pluginProto.acts;
+	acts.sendData = function (data) //Joe7
+	{
+		this.dataToSend= data;
+	},
+	acts.Request = function (tag_, url_)
+	{
+		var context_obj = { tag: tag_, inst: this };
+		jQuery.ajax({
+			type: "POST", 			// Joe7
+			data: this.dataToSend,	// Joe7
+			context: context_obj,
+			dataType: "text",
+			url: url_,
+			success: function(data) {
+				this.inst.lastData = data;
+				this.inst.curTag = this.tag;
+				this.inst.runtime.trigger(cr.plugins_.ajaxPost.prototype.cnds.OnComplete, this.inst);
+			},
+			error: function() {
+				this.inst.curTag = this.tag;
+				this.inst.runtime.trigger(cr.plugins_.ajaxPost.prototype.cnds.OnError, this.inst);
+			}
+		});
+	};
+	pluginProto.exps = {};
+	var exps = pluginProto.exps;
+	exps.lastData = function (ret)
+	{
+		ret.set_string(this.lastData);
+	}
+}());
+;
+;
 cr.behaviors.Anchor = function(runtime)
 {
 	this.runtime = runtime;
@@ -10027,6 +10100,16 @@ cr.getProjectModel = function() { return [
 	"Instructions",
 	[
 	[
+		cr.plugins_.ajaxPost,
+		true,
+		false,
+		false,
+		false,
+		false,
+		false,
+		false
+	]
+,	[
 		cr.plugins_.Button,
 		false,
 		true,
@@ -10787,6 +10870,20 @@ cr.getProjectModel = function() { return [
 		],
 		false,
 		false
+	]
+,	[
+		"t33",
+		cr.plugins_.ajaxPost,
+		false,
+		0,
+		0,
+		null,
+		null,
+		[
+		],
+		false,
+		false
+		,[]
 	]
 	],
 	[
@@ -13436,7 +13533,7 @@ cr.getProjectModel = function() { return [
 			false,
 			[
 			[
-				32,
+				9,
 				cr.plugins_.Button.prototype.cnds.OnClicked,
 				null,
 				true,
@@ -13447,32 +13544,9 @@ cr.getProjectModel = function() { return [
 			],
 			[
 			[
-				27,
-				cr.plugins_.Text.prototype.acts.SetText,
-				null
-				,[
-				[
-					7,
-					[
-						20,
-						12,
-						cr.plugins_.TextBox.prototype.exps.Text,
-						true,
-						null
-					]
-				]
-				]
-			]
-,			[
 				-1,
-				cr.system_object.prototype.acts.GoToLayout,
+				cr.system_object.prototype.acts.RestartLayout,
 				null
-				,[
-				[
-					6,
-					"Instructions"
-				]
-				]
 			]
 			]
 		]
@@ -13497,6 +13571,65 @@ cr.getProjectModel = function() { return [
 				cr.system_object.prototype.acts.RestartLayout,
 				null
 			]
+,			[
+				33,
+				cr.plugins_.ajaxPost.prototype.acts.sendData,
+				null
+				,[
+				[
+					1,
+					[
+						10,
+						[
+							10,
+							[
+								10,
+								[
+									2,
+									"time="
+								]
+								,[
+									23,
+									"totalTime"
+								]
+							]
+							,[
+								2,
+								"&name="
+							]
+						]
+						,[
+							20,
+							12,
+							cr.plugins_.TextBox.prototype.exps.Text,
+							true,
+							null
+						]
+					]
+				]
+				]
+			]
+,			[
+				33,
+				cr.plugins_.ajaxPost.prototype.acts.Request,
+				null
+				,[
+				[
+					1,
+					[
+						2,
+						""
+					]
+				]
+,				[
+					1,
+					[
+						2,
+						"http://localhost/sule0010/web-app/save-time.php"
+					]
+				]
+				]
+			]
 			]
 		]
 ,		[
@@ -13516,13 +13649,61 @@ cr.getProjectModel = function() { return [
 			],
 			[
 			[
-				-1,
-				cr.system_object.prototype.acts.GoToLayout,
+				33,
+				cr.plugins_.ajaxPost.prototype.acts.sendData,
 				null
 				,[
 				[
-					6,
-					"Instructions"
+					1,
+					[
+						10,
+						[
+							10,
+							[
+								10,
+								[
+									2,
+									"time="
+								]
+								,[
+									23,
+									"totalTime"
+								]
+							]
+							,[
+								2,
+								"&name="
+							]
+						]
+						,[
+							20,
+							12,
+							cr.plugins_.TextBox.prototype.exps.Text,
+							true,
+							null
+						]
+					]
+				]
+				]
+			]
+,			[
+				33,
+				cr.plugins_.ajaxPost.prototype.acts.Request,
+				null
+				,[
+				[
+					1,
+					[
+						2,
+						""
+					]
+				]
+,				[
+					1,
+					[
+						2,
+						"http://localhost/sule0010/web-app/save-time.php"
+					]
 				]
 				]
 			]

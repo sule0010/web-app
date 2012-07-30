@@ -4,7 +4,7 @@ require_once 'includes/db.php';
 
 $sql = $db->query('
 	SELECT id, name, time
-	FROM games
+	FROM game
 	ORDER BY time ASC
 ');
 
@@ -14,7 +14,6 @@ $sql = $db->query('
 $results = $sql->fetchAll();
 
 ?>
-
 <!DOCTYPE HTML>
 <html>
 	<head>
@@ -30,8 +29,8 @@ $results = $sql->fetchAll();
 		<div id="score">
 			<fieldset id="record"><legend>Total Records</legend>
 						<dl>
-							<dt id="time">Time</dt>
 							<dt id="name">Name</dt>
+							<dt id="time">Time</dt>
 							<?php foreach ($results as $game) : ?>
 								<dd id="data-1"><?php echo $game['name']; ?></dd>
 								<dd id="data-2"><?php echo $game['time']; ?></dd>
