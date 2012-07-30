@@ -1,3 +1,20 @@
+<?php
+
+require_once 'includes/db.php';	
+
+$sql = $db->query('
+	SELECT id, name, time
+	FROM games
+	ORDER BY time ASC
+');
+
+// Display the last error created by our database
+//var_dump($db->errorInfo());
+
+$results = $sql->fetchAll();
+
+?>
+
 <!DOCTYPE HTML>
 <html>
 	<head>
@@ -15,9 +32,9 @@
 						<dl>
 							<dt id="time">Time</dt>
 							<dt id="name">Name</dt>
-							<?php foreach ($results as $movie) : ?>
-								<dd id="data-1"><?php echo $movie['id']; ?></dd>
-								<dd id="data-2"><?php echo $movie['movie_title']; ?></dd>
+							<?php foreach ($results as $game) : ?>
+								<dd id="data-1"><?php echo $game['name']; ?></dd>
+								<dd id="data-2"><?php echo $game['time']; ?></dd>
 							<?php endforeach; ?>
 						</dl>
 					</fieldset>
