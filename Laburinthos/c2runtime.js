@@ -10024,7 +10024,7 @@ cr.behaviors.solid = function(runtime)
 }());
 cr.getProjectModel = function() { return [
 	null,
-	"Login",
+	"Instructions",
 	[
 	[
 		cr.plugins_.Button,
