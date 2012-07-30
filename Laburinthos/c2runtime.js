@@ -13001,7 +13001,7 @@ cr.getProjectModel = function() { return [
 				],
 				[
 					"",
-					"",
+					"Max of 5 Characters",
 					"",
 					0,
 					1,

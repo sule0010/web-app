@@ -34,11 +34,16 @@ iframe{
 
 #name{
 	float: left;
-	margin-right: 3em;
+	margin-right: 2.8em;
 }
 
 #data-1{
 	float: left;
 	margin-left: -0.25em;
-	padding-right: 3em;
+	padding-right: 2em;
+	width: 5em;
+}
+
+#data-2{
+	width: 15em;
 }
