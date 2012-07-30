@@ -6,6 +6,7 @@ $sql = $db->query('
 	SELECT id, name, time
 	FROM game
 	ORDER BY time ASC
+	LIMIT 10
 ');
 
 // Display the last error created by our database
@@ -19,6 +20,8 @@ $results = $sql->fetchAll();
 	<head>
 		<meta charset="utf-8">
 		<title>Laburinthos</title>
+		<link href="css/general.css" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
 	</head>
 	
 	<body>
@@ -27,7 +30,7 @@ $results = $sql->fetchAll();
 			<iframe src="Laburinthos/index.html" width="850" height="700"></iframe>
 		</div>
 		<div id="score">
-			<fieldset id="record"><legend>Total Records</legend>
+			<fieldset id="record"><legend>LeaderBoard</legend>
 						<dl>
 							<dt id="name">Name</dt>
 							<dt id="time">Time</dt>

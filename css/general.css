@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+html{
+	font-family: 'Press Start 2P', cursive; 
+}
+
+body{
+	background:url("../images/1328372_57165107.jpg");
+	background-attachment:fixed;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#wrapper{
+	margin: 0 auto;
+	padding: 0;
+	width: 70em;
+}
+
+h1{
+	text-align: center;
+	margin-right: 9em;
+}
+
+iframe{
+	float: left;
+}
+
+#score{
+	background-color: #3CF;
+	float: left;
+	width: 20em;
+}
+
+#name{
+	float: left;
+	margin-right: 3em;
+}
+
+#data-1{
+	float: left;
+	margin-left: -0.25em;
+	padding-right: 3em;
+}

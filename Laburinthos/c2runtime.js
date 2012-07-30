@@ -13567,11 +13567,6 @@ cr.getProjectModel = function() { return [
 			],
 			[
 			[
-				-1,
-				cr.system_object.prototype.acts.RestartLayout,
-				null
-			]
-,			[
 				33,
 				cr.plugins_.ajaxPost.prototype.acts.sendData,
 				null
@@ -13589,8 +13584,11 @@ cr.getProjectModel = function() { return [
 									"time="
 								]
 								,[
-									23,
-									"totalTime"
+									20,
+									6,
+									cr.plugins_.Text.prototype.exps.Text,
+									true,
+									null
 								]
 							]
 							,[
@@ -13629,6 +13627,11 @@ cr.getProjectModel = function() { return [
 					]
 				]
 				]
+			]
+,			[
+				-1,
+				cr.system_object.prototype.acts.RestartLayout,
+				null
 			]
 			]
 		]
@@ -13666,8 +13669,11 @@ cr.getProjectModel = function() { return [
 									"time="
 								]
 								,[
-									23,
-									"totalTime"
+									20,
+									6,
+									cr.plugins_.Text.prototype.exps.Text,
+									true,
+									null
 								]
 							]
 							,[
@@ -13704,6 +13710,17 @@ cr.getProjectModel = function() { return [
 						2,
 						"http://localhost/sule0010/web-app/save-time.php"
 					]
+				]
+				]
+			]
+,			[
+				-1,
+				cr.system_object.prototype.acts.GoToLayout,
+				null
+				,[
+				[
+					6,
+					"Instructions"
 				]
 				]
 			]
