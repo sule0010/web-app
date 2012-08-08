@@ -1,9 +1,13 @@
-web-app: Labrinthous
+Labrinthous
 =======
 
-Description: This is a web app game where you control a chracter using the directional keys to help him find his way out of the maze.
+#Description
+
+This is a web app game where you control a chracter using the directional keys to help him find his way out of the maze.
+
+[Labrinnthos](http://laburinthos-webapp.phpfogapp.com/)
+
+##Authour
 
 Bashir Suleiman
 
-### Link to web-app
-- [Labrinnthos](http://laburinthos-webapp.phpfogapp.com/)
