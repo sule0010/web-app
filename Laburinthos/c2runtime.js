@@ -13644,7 +13644,7 @@ cr.getProjectModel = function() { return [
 					1,
 					[
 						2,
-						"http://http://laburinthos-webapp.phpfogapp.com/save-time.php"
+						"http://laburinthos-webapp.phpfogapp.com/save-time.php"
 					]
 				]
 				]
@@ -13750,7 +13750,7 @@ cr.getProjectModel = function() { return [
 					1,
 					[
 						2,
-						"http://http://laburinthos-webapp.phpfogapp.com/save-time.php"
+						"http://laburinthos-webapp.phpfogapp.com/save-time.php"
 					]
 				]
 				]
