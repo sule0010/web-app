@@ -1,5 +1,17 @@
 <?php
 
+/**
+ * Small description of this file:
+ * This connects the database with the app.
+ *
+ * @author Bashir Suleiman <bashir.b.suleiman@gmail.com>
+ * @copyright 2012 Bashir Suleiman
+ * @license BSD-3-Clause https://github.com/sule0010/web-app/NEW-BSD-LICENSE.txt>
+ * @Labrinthos <https://github.com/sule0010/web-app>
+ * @version 1.0.0
+ * @package Labrinthos
+ */
+
 // opens a connection to the MySQL database
 // Shared between all the PHP files in our application
 
