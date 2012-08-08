@@ -8,7 +8,9 @@ This is a web app game where you control a chracter using the directional keys t
 
 [Labrinnthos](http://laburinthos-webapp.phpfogapp.com/)
 
--Authour
+###Authour###
 
-Bashir Suleiman
+Bashir Suleiman : [@sule0010](http://bashir.b.suleiman@gmail.com)
+
+
 
