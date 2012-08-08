@@ -7,7 +7,7 @@
 
 ## 3.What are your goals for this week?
 
-- Update my Documentation.
+- Update my Documentation in my app.
 
 
 ### 4.What concepts or techniques did you learn?
