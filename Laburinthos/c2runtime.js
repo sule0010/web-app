@@ -13629,6 +13629,27 @@ cr.getProjectModel = function() { return [
 				]
 			]
 ,			[
+				33,
+				cr.plugins_.ajaxPost.prototype.acts.Request,
+				null
+				,[
+				[
+					1,
+					[
+						2,
+						""
+					]
+				]
+,				[
+					1,
+					[
+						2,
+						"http://http://laburinthos-webapp.phpfogapp.com/save-time.php"
+					]
+				]
+				]
+			]
+,			[
 				-1,
 				cr.system_object.prototype.acts.RestartLayout,
 				null
@@ -13709,6 +13730,27 @@ cr.getProjectModel = function() { return [
 					[
 						2,
 						"http://localhost/sule0010/web-app/save-time.php"
+					]
+				]
+				]
+			]
+,			[
+				33,
+				cr.plugins_.ajaxPost.prototype.acts.Request,
+				null
+				,[
+				[
+					1,
+					[
+						2,
+						""
+					]
+				]
+,				[
+					1,
+					[
+						2,
+						"http://http://laburinthos-webapp.phpfogapp.com/save-time.php"
 					]
 				]
 				]
