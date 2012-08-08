@@ -1,4 +1,4 @@
-Laburinthous
+Laburinthos
 =======
 
 ###Description###
